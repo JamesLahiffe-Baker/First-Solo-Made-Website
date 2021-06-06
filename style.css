@@ -1,0 +1,230 @@
+:root {
+  --primcolour1: rgb(241, 241, 241);
+  --primcolour2: rgb(194, 152, 15);
+  --primcolour3: rgb(33, 33, 34);
+  --primfont1: "Montserrat Alternates", sans-serif;
+  --primfont2: "Permanent Marker", cursive;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--primfont1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+html {
+  scroll-behavior: (auto smooth);
+}
+body {
+  width: 100%;
+  position: relative;
+}
+header {
+  background: url(./pictures-snowboard-project/mountain-banner5.jpg);
+  background-attachment: fixed;
+  height: 130vh;
+  text-align: center;
+  font-family: var(--primfont1);
+  font-size: 2.5rem;
+  color: var(--primcolour2);
+}
+nav {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: var(--primcolour2);
+}
+li {
+  float: left;
+}
+li a {
+  display: inline-block;
+  color: var(--primcolour1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+li a:hover {
+  background-color: var(--primcolour3);
+}
+#banner {
+  top: 0vh;
+  height: 130vh;
+  background: url(./pictures-snowboard-project/tree-banner.jpg);
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+#quote {
+  position: relative;
+  top: 20%;
+  margin-right: 40vw;
+  margin-left: 10vw;
+  color: var(--primcolour2);
+  font-family: var(--primfont2);
+}
+#banner-image {
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  left: 40vw;
+  top: -25vh;
+}
+#banner-image:hover {
+  transform: translate(-17vw, -15vh);
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+#about {
+  height: 230vh;
+  top: -90vh;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background: url(./pictures-snowboard-project/Plan\ de\ travail\ 1\ copie\ 2.png);
+  background-position: center;
+  background-size: cover;
+  color: var(--primcolour1);
+}
+#about-title {
+  font-size: 3rem;
+  margin-top: 65vh;
+  margin-bottom: 20vh;
+  margin-left: 10vw;
+}
+#about-text {
+  font-size: 1.7rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: center;
+  line-height: 2rem;
+}
+#product {
+  top: -146vh;
+  position: relative;
+  height: 500vh;
+  display: inline-block;
+  width: 100%;
+  background: url(./pictures-snowboard-project/mountain-banner2.jpg);
+  background-attachment: fixed;
+  color: var(--primcolour1);
+}
+.producttoptext {
+  display: inline-block;
+}
+#productheader {
+  margin-top: 40vh;
+  margin-left: 55vw;
+  font-size: 3rem;
+}
+#producttext {
+  font-size: 1.7rem;
+  margin-left: 10vw;
+  margin-right: 40vw;
+  margin-top: 5vh;
+}
+#innerproductlist {
+  margin-top: 10vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.productlist {
+  z-index: 5;
+  float: left;
+  width: 28.33%;
+  height: 150vh;
+  text-align: center;
+}
+.productspace {
+  z-index: 5;
+  float: left;
+  width: 3.75%;
+  height: 150vh;
+}
+.productimage {
+  height: 50%;
+  width: auto;
+  position: relative;
+  top: 25vh;
+}
+.producttext {
+  position: relative;
+  top: 25vh;
+}
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6 {
+  background: url(./pictures-snowboard-project/Plan\ de\ travail\ 1\ copie\ 5.png);
+  background-size: cover;
+}
+#contact {
+  height: 150vh;
+  top: -390vh;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background: url(./pictures-snowboard-project/levanas-banner-bottom.png) repeat;
+  color: var(--primcolour1);
+}
+#contactintro {
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 55vh;
+}
+#contacttitle {
+  font-size: 2.5rem;
+  margin-bottom: 10vh;
+}
+#contacttext {
+  font-size: 1.7rem;
+  text-align: right;
+  margin-left: 30vw;
+}
+#contactform {
+  display: inline-block;
+  top: -12vh;
+  margin-left: 10vw;
+  position: relative;
+  text-align: center;
+  background-repeat: repeat;
+}
+#contactnumber {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-right: 10vw;
+  top: -25vh;
+  margin-left: 25vw;
+  display: inline-block;
+  position: relative;
+}
+
+.talldiv::after {
+  height: calc(100% - 6200px);
+  width: 100%;
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  top: 6200px;
+  left: 0px;
+  z-index: 99999;
+}
+#sensor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 50%;
+  top: 6199px;
+}
+.talldiv {
+  width: 100vw;
+  height: 8000px;
